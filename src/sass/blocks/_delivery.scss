@@ -1,0 +1,31 @@
+.delivery {
+    min-height: 619px;
+    padding: 51px 0 57px 0;
+    hr {
+        display: block;
+        margin: 20px auto 0 auto;
+        width: 148px;
+    }
+    &__wrapper {
+        margin-top: 37px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item {
+        width: 360px;
+    }
+    .subtitle_orange {
+        text-align: center;
+        font-size: 18px;
+        font-weight: 700;
+    }
+    &__descr {
+        margin-top: 28px;
+        &__text {
+            text-align: center;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 22px;
+        }
+    }
+}
