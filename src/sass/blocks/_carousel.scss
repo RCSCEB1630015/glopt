@@ -1,24 +1,74 @@
 .carousel {
-    padding: 50px 0;
+    padding: 50px 0 65px 0;
     min-height: 470px;
-    &__inner {
-        width: 500px;
-        margin: 0 auto;
-        img {
-            width: 114px;
-            height: 114px;
-        }
-        .slick {
-            &-slide {
-                opacity: 0.2;
+    &__photo {
+        margin-top: 31px;
+        position: relative;
+        .slick-list {
+            width: 1115px;
+            margin: 0 auto;
+            .slick-slide {
+                opacity: 0.5;
+                height: 114px;
+                overflow: visible;
                 img {
-                    margin: 0 auto;
+                    display: block;
+                    margin: 44px auto 0 auto;
+                    width: 70px;
+                    height: 70px;
                 }
             }
-            &-active {
+            .slick-current {
                 opacity: 1;
-
+                img {
+                    margin: 0 auto;
+                    width: 114px;
+                    height: 114px;
+                }
             }
         }
+        .slick-prev {
+            position: absolute;
+            right: calc(50% + 99px);
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        .slick-next {
+            position: absolute;
+            right: calc(50% - 99px);
+            top: 50%;
+            transform:translateY(-50%);
+        }
     }
+    /* &__descr {
+        margin-top: 19px;
+        .slick-list {
+            width: 1413px;
+            margin: 0 auto;
+            .slick-slide {
+                opacity: 0.0;
+            }
+            .slick-active {
+                max-width: 361px;
+                height: 100px;
+                text-align: center;
+                font-size: 10px;
+                opacity: 0.5;
+                h2 {
+                    font-size: 10px;
+                }
+            }
+            .slick-current {
+                opacity: 1.0;
+                width: 601px;
+                height: 108px;
+                text-align: center;
+                font-size: 14px;
+                margin: 0 78px;
+                h2 {
+                    font-size: 12px;
+                }
+            }
+        }
+    } */
 }
