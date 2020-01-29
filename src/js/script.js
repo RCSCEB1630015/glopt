@@ -1,23 +1,18 @@
 $(document).ready(function(){
-  $('.carousel__photo').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
+  $('.carousel__inner').slick({
     centerMode: true,
-    /* asNavFor: '.carousel__descr', */
-    prevArrow: '<button type="button" class="slick-prev"><img src="../icons/arrow_left.svg"></button>',
-    nextArrow: '<button type="button" class="slick-next"><img src="../icons/arrow_right.svg"></button>',
+    slidesToShow: 3,
+    prevArrow: '<button type="button" class="slick-prev"><img src="icons/arrow_left.svg"></button>',
+    nextArrow: '<button type="button" class="slick-next"><img src="icons/arrow_right.svg"></button>',
+    asNavFor: '.carousel__text'
   });
 
-  /* $('.carousel__descr').slick({
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    arrows: false,
-    asNavFor : '.carousel__photo',
+  $('.carousel__text').slick({
     centerMode: true,
-  }); */
-
-
-
+    slidesToShow: 3,
+    arrows: false,
+    asNavFor: '.carousel__inner'
+  });
 
 
 });

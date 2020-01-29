@@ -7,6 +7,17 @@
         font-size: 28px;
         font-weight: 400;
     }
+    .circle__wrapper {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 122px;
+        height: 122px;
+    }
     .circle__img {
         position: absolute;
         left: 50%;
@@ -14,9 +25,8 @@
         border-color: $main-color;
         background-color: #fff;
     }
-
     .feed-form {
-        margin-top: 58px;
+        margin-top: 70px;
         width: 1140px;
         height: 166px;
         border: 1px solid #898989;
@@ -25,7 +35,6 @@
             height: 100%;
             justify-content: center;
             align-items: center;
-
         }
         input {
             width: 268px;
@@ -33,12 +42,21 @@
             border-color: #898989;
             border-radius: 50px;
             margin: 0 2px;
+            padding-left: 10px;
         }
         .button_submit {
             position: absolute;
-            bottom: 37px;
             left: 50%;
             transform: translateX(-50%);
         }
+    }
+    .button__wrapper {
+        width: 207px;
+        background-color: #fff;
+        height: 45px;
+        position: absolute;
+        bottom: 37px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

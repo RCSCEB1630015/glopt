@@ -9,7 +9,7 @@
             align-items: center;
             flex-direction: row;
             .header__menu {
-                &__item {
+                &__list {
                     list-style-type: none;
                     display: flex;
                     flex-direction: row;
@@ -20,6 +20,14 @@
                     padding-left: 0px;
                     margin-bottom: 0px;
                     justify-content: space-between;
+                    &__item {
+                        border-right: 1px dotted rgba($color: #000000, $alpha: 0.7);
+                        padding-right: 13px;
+                        &:last-child {
+                            border-right:none;
+                            padding-right: 0;
+                        }
+                    }
                     &__link {
                         display: block;
                         position: relative;
@@ -27,12 +35,6 @@
                         color: #ffffff;
                         font-size: 15px;
                         font-weight: 400;
-                        border-right: 1px dotted rgba($color: #000000, $alpha: 0.7);
-                        padding-right: 13px;
-                        &::last-child {
-                            border-right: none;
-                            padding-right: 0;
-                        }
                         &:hover {
                             color: $main-color;
                         }
@@ -57,7 +59,6 @@
                     text-align: right;
                 }
             }
-            
         }
     }
     .globalopt__descr {
@@ -74,6 +75,10 @@
         align-items: center;
         &__item {
             width: 338px;
+            hr {
+                width: 100%;
+                margin: 10px auto;
+            }
         }
         &__circle {
             background-color: #fff;

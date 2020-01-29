@@ -1,4 +1,5 @@
 @import 'libs/bootstrap-reboot.min';
+@import 'base/media';
 @import 'base/variables';
 
 * {
@@ -9,6 +10,7 @@
     max-width: 1140px;
     margin: 0 auto;
 }
+
 
 @import 'blocks/promo';
 @import 'blocks/buttons';
@@ -23,3 +25,5 @@
 @import 'blocks/scheme';
 @import 'blocks/carousel';
 @import 'libs/slick';
+@import 'blocks/questions';
+@import 'blocks/footer';
